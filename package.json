@@ -1,16 +1,24 @@
 {
-  "name": "example-cypress-javascript",
-  "version": "2.1.0",
-  "description": "An Applitools example project for Cypress in JavaScript",
-  "main": "index.js",
-  "scripts": {
-    "test": "cypress run --browser chrome",
-    "cypress:open": "cypress open"
-  },
-  "author": "Applitools Team <team@applitools.com> (http://www.applitools.com/)",
-  "license": "Apache License 2.0",
-  "dependencies": {
-    "@applitools/eyes-cypress": "^3.32.2",
-    "cypress": "^12.12.0"
-  }
+    "name": "example-cypress-javascript",
+    "version": "2.1.0",
+    "description": "An Applitools example project for Cypress in JavaScript",
+    "main": "index.js",
+    "scripts": {
+        "test": "cypress run --browser chrome",
+        "cypress:open": "cypress open",
+        "cypress": "cypress open",
+        "cypress:original": "cypress open --env DEMO_SITE=original",
+        "cypress:changed": "cypress open --env DEMO_SITE=changed",
+        "test:original": "cypress run --env DEMO_SITE=original",
+        "test:changed": "cypress run --env DEMO_SITE=changed",
+        "test:chrome": "cypress run --browser chrome",
+        "test:edge": "cypress run --browser edge",
+        "test:firefox": "cypress run --browser firefox"
+    },
+    "author": "Applitools Team <team@applitools.com> (http://www.applitools.com/)",
+    "license": "Apache License 2.0",
+    "dependencies": {
+        "@applitools/eyes-cypress": "^3.32.2",
+        "cypress": "^12.12.0"
+    }
 }
